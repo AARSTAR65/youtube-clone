@@ -30,7 +30,7 @@ class App extends Component {
   }
   search = (query) => {
     const url1 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=';
-    const url2 = '&key=AIzaSyDvuFpxdGB2fOHCUfLolCT_KobZrC37Erg';
+    const url2 = '&key=AIzaSyDCBy70V9Wn7gXJ5Jp81x5E0pzHjZa8ELk';
     const url = url1 + query + url2;
     console.log(url);
 
