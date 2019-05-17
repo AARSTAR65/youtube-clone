@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.List{
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  width: 30%; 
+  height: 93%; 
+  top: 45px;
+  z-index: 1;
+}
+
+.videos{
+  list-style-type: none;
+}
+
+.videoPlayer{
+  position: fixed;
+  width: 65%;
+  height: 90%;
+  top: 45px;
+  left: 0;
+  padding-left: 70px;
+  border-right: solid 1px rgb(100,100,100);
+  overflow: auto;
+}

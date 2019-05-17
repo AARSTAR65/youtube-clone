@@ -1,0 +1,33 @@
+.listItems{
+	margin-top: 3px;
+	padding: 8px 8px 8px 8px;
+}
+
+.thumbnail{
+	border-radius: 5px;
+	border: none;
+
+}
+
+.thumbnailDetail{
+	float: top;
+	width: 220px;
+	height: 90px;
+	font-family: Segoe UI;
+}
+
+.thumbnailTitle{
+	float: top;
+	font-size: 15px;
+}
+
+.thumbnailChannel{
+	float: top;	
+	font-size: 10px;
+	color: rgb(150,150,150);
+}
+
+.thumbnailContainer {
+	width: 120px;
+	height: 90px;
+}

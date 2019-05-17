@@ -1,0 +1,52 @@
+.enterComment{
+	display: block-inline;
+}
+
+.commHead{
+	font-family: Segoe UI;
+	font-size: 20px;
+}
+
+.comment{
+	width:400px;
+	font-family: Segoe UI;
+	 height: 20px;
+	 border: none;
+	 /*background-color: rgb(150,150,150);*/
+	 border-bottom: solid 2px rgb(180,180,180);
+	 font-size: 14px;
+	 padding:4px;
+}
+
+.channelName{
+	width:400px;
+	margin-left:10px;
+	height: 20px;
+	border: none;
+	border-bottom: solid 2px rgb(180,180,180);
+	/*background-color: rgb(200,150,150);*/
+	font-size: 14px;
+	font-family: Segoe UI;
+	padding:4px;
+}
+
+.commButton{
+	background-color: white;
+	border: solid 1px rgb(150,150,150);
+	padding: 4px 20px 4px 20px;
+	font-family: Segoe UI;
+
+}
+
+.cancelButton{
+	background-color: white;
+	border: solid 1.5px rgb(150,150,150);
+	padding: 4px 20px 4px 20px;
+	margin-left: 15px;
+	font-family: Segoe UI;
+}
+
+.buttons{
+	margin-top:20px;
+	margin-left:640px;
+}
