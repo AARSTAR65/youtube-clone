@@ -3,21 +3,23 @@ import './css/App.css';
 import NavigationBar from './components/nav.js';
 import Display from './components/display.js';
 import Player from './components/player.js';
-import CommentSec from './components/commentSec.js';
 import CommentList from './components/CommentList.js';
+import CommentSec from './components/commentSec.js';
 
 class App extends Component {
 
   state = {
     comments: [],
     data: [],
-    nowPlaying: { id: { videoId: '' }, snippet: { title: '', channelTitle: '' } }
+    nowPlaying: { id: { videoId: '' }, snippet: { title: '', channelTitle: '' } },
+    playerSize: {width: '640', height: '390'}
   }
   constructor(props) {
     super(props);
 
-    const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=&key=AIzaSyDvuFpxdGB2fOHCUfLolCT_KobZrC37Erg';
+    const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=&key=AIzaSyDVAyQ8YEk4KXt9LR6h-rlxIj908k13sSA';
     console.log(url);
+
 
     fetch(url)
       .then(result => result.json())
@@ -30,7 +32,7 @@ class App extends Component {
   }
   search = (query) => {
     const url1 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=';
-    const url2 = '&key=AIzaSyDCBy70V9Wn7gXJ5Jp81x5E0pzHjZa8ELk';
+    const url2 = '&key=AIzaSyDVAyQ8YEk4KXt9LR6h-rlxIj908k13sSA';
     const url = url1 + query + url2;
     console.log(url);
 
@@ -66,7 +68,7 @@ class App extends Component {
           </div>
           <div className="videoPlayer">
             <div className="playerBack">
-              <Player nowPlaying={this.state.nowPlaying} />
+              <Player nowPlaying={this.state.nowPlaying} playerSize={this.state.playerSize} />
             </div>
             <CommentSec handleSubmit={this.handleSubmit} />
 				    <CommentList comments={this.state.comments} />

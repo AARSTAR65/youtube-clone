@@ -6,8 +6,8 @@ class Player extends React.Component {
   render() {
     const { nowPlaying } = this.props;
     const opts = {
-      height: '390',
-      width: '640',
+      height: this.props.playerSize.height,
+      width: this.props.playerSize.width,
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1
       }

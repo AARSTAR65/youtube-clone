@@ -13,17 +13,19 @@ class Display extends Component {
 				<li key={index} onClick={() => this.props.playVideo(index)} >
 					<div className="listItem" >
 						<table>
-							<tr>
-								<td className="thumb">
-									<div className="thumbnailContainer" ><img src={row.snippet.thumbnails.default.url} className="thumbnail" /></div>
-								</td>
-								<td>
-									<div className="thumbnailDetail">
-										<div className="thumbnailTitle" >{row.snippet.title}</div>
-										<div className="thumbnailChannel" >{row.snippet.channelTitle}</div>
-									</div>
-								</td>
-							</tr>
+							<tbody>
+								<tr>
+									<td className="thumb">
+										<div className="thumbnailContainer" ><img src={row.snippet.thumbnails.default.url} className="thumbnail" /></div>
+									</td>
+									<td>
+										<div className="thumbnailDetail">
+											<div className="thumbnailTitle" >{row.snippet.title}</div>
+											<div className="thumbnailChannel" >{row.snippet.channelTitle}</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</li>
